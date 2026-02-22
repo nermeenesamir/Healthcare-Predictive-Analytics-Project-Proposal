@@ -1,4 +1,4 @@
-# Healthcare-Predictive-Analytics-Project-Proposal
+# Healthcare-Predictive-Analytics-
 This project aims to develop a healthcare predictive analytics system using data science and machine learning techniques to enhance early risk assessment and support clinical decision-making. By analyzing patient demographic, clinical, and lifestyle data, the system identifies patterns associated with potential health risks. 
 Project Objectives:
 •
