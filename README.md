@@ -15,6 +15,7 @@ A machine learning project aimed at developing a healthcare predictive analytics
 - [🧪 Modeling Results](#-modeling-results)
 - [⚙️ Installation](#️-installation)
 - [🚀 Usage](#-usage)
+- [🖥️ Opening the App](#️-opening-the-app)
 - [📁 Project Structure](#-project-structure)
 - [📋 Requirements](#-requirements)
 - [👥 Team](#-team)
@@ -126,6 +127,51 @@ streamlit run streamlit_app.py
 
 ---
 
+## 🖥️ Opening the App
+
+The project ships two interfaces that share the same trained pipeline, so both return identical predictions for identical input.
+
+### Option 1 — Streamlit web app (recommended for quick testing)
+
+```bash
+# 1. Install dependencies (skip if already done)
+pip install -r requirements.txt
+
+# 2. Make sure the trained model exists at models/stroke_model_pipeline.joblib
+#    (run `python -m src.train` first if it doesn't)
+
+# 3. Launch the app
+streamlit run streamlit_app.py
+```
+
+Streamlit will start a local server and print a URL in the terminal — it also opens automatically in your default browser. If it doesn't, go to:
+
+👉 **http://localhost:8501**
+
+Fill in the patient form (age, gender, hypertension, heart disease, average glucose level, BMI, work type, residence type, smoking status) and click **Predict** to see the stroke probability and risk flag.
+
+**Live deployed link:** _not yet published — this app currently runs locally only. Once deployed (e.g. via [Streamlit Community Cloud](https://streamlit.io/cloud)), add the URL here:_ `[Stroke Risk Prediction App](your-deployed-link-here)`
+
+### Option 2 — REST API (for programmatic access)
+
+```bash
+uvicorn api.main:app --reload
+```
+
+The API starts at **http://localhost:8000**. Interactive docs (Swagger UI) are available at:
+
+👉 **http://localhost:8000/docs**
+
+Key endpoints:
+
+| Endpoint | Method | Purpose |
+|---|---|---|
+| `/health` | GET | Reports service status and whether the model is loaded |
+| `/predict` | POST | Scores a single patient record and returns probability, prediction, threshold, and risk level |
+| `/predict-batch` | POST | Scores a list of patient records in one request |
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -194,9 +240,3 @@ This system is a decision-support prototype for educational purposes and must no
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to fork this repository and submit a pull request.
-
----
-
-## 📄 License
-
-Add a license of your choice (e.g. MIT) if this repository is intended to be public.
