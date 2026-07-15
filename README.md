@@ -21,7 +21,6 @@ A machine learning project aimed at developing a healthcare predictive analytics
 - [📋 Requirements](#-requirements)
 - [⚠️ Limitations](#️-limitations)
 - [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
 
 ---
 
