@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.Python
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+*.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Large / generated artifacts (uncomment if you don't want these tracked in git)
+# dataset/*.csv
+# models/*.joblib
+# reports/*.csv
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Logs
+*.log
