@@ -10,6 +10,7 @@ A machine learning project aimed at developing a healthcare predictive analytics
 
 - [💡 Overview](#-overview)
 - [🎯 Objectives](#-objectives)
+- [👥 Team](#-team)
 - [📌 Scope](#-scope)
 - [🗂️ Dataset](#️-dataset)
 - [🧪 Modeling Results](#-modeling-results)
@@ -18,7 +19,6 @@ A machine learning project aimed at developing a healthcare predictive analytics
 - [🖥️ Opening the App](#️-opening-the-app)
 - [📁 Project Structure](#-project-structure)
 - [📋 Requirements](#-requirements)
-- [👥 Team](#-team)
 - [⚠️ Limitations](#️-limitations)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
@@ -40,6 +40,21 @@ The system estimates a patient's risk of stroke using demographic factors (age, 
 - **Leak-Free Preprocessing:** Encapsulate all preprocessing (imputation, scaling, one-hot encoding) inside a single scikit-learn `Pipeline` fitted only on the training split, so no information from the test set leaks into training.
 - **Threshold Optimization:** Move beyond the default 0.5 decision threshold and tune it to balance false negatives (missed strokes) against false positives (unnecessary alerts).
 - **Deployable Artifact:** Persist the final pipeline (preprocessing + model) as a single serialized object loaded by a lightweight web application and REST API.
+
+---
+
+## 👥 Team — Group Code CAI_AIS4_S2
+
+| Member | Role |
+|---|---|
+| Muuhmd Salah Abd El-Bari | Team Leader — project management, requirements & final documentation |
+| Omar Ahmed Mostafa | Data Engineer — data collection, cleaning & preprocessing (Milestone 1) |
+| Toqa Hamed Mohamed | Data Analyst — exploratory data analysis & visualization (Milestone 2) |
+| Goerge Emil Sadeq | ML Engineer — model development & optimization (Milestone 3) |
+| Mostafa Mohamed Foaad | Backend / MLOps Engineer — API, deployment & monitoring (Milestone 4) |
+| Nermine Samir Abd El-Aty | QA & Presentation Lead — testing, validation & final presentation (Milestone 5) |
+
+**Instructor:** Ahmed Mostafa · **Program:** Digital Egypt Pioneers Initiative (DEPI), Round 4, AI & Data Science Track
 
 ---
 
@@ -207,21 +222,6 @@ Healthcare-Predictive-Analytics-Project-Proposal/
 - mlflow (experiment tracking, planned)
 
 Full pinned versions in [`requirements.txt`](requirements.txt).
-
----
-
-## 👥 Team — Group Code CAI_AIS4_S2
-
-| Member | Role |
-|---|---|
-| Muuhmd Salah Abd El-Bari | Team Leader — project management, requirements & final documentation |
-| Omar Ahmed Mostafa | Data Engineer — data collection, cleaning & preprocessing (Milestone 1) |
-| Toqa Hamed Mohamed | Data Analyst — exploratory data analysis & visualization (Milestone 2) |
-| Goerge Emil Sadeq | ML Engineer — model development & optimization (Milestone 3) |
-| Mostafa Mohamed Foaad | Backend / MLOps Engineer — API, deployment & monitoring (Milestone 4) |
-| Nermine Samir Abd El-Aty | QA & Presentation Lead — testing, validation & final presentation (Milestone 5) |
-
-**Instructor:** Ahmed Mostafa · **Program:** Digital Egypt Pioneers Initiative (DEPI), Round 4, AI & Data Science Track
 
 ---
 
