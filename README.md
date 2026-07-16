@@ -43,12 +43,12 @@ Each member owned an end-to-end stage of the pipeline — every contribution is 
 
 | Member | Role | Contribution |
 |---|---|---|
-| **Muhammed Salah** | Team Leader | Project management, requirements & final documentation |
-| **George Emil** | ML Engineer | Model development & optimization (Milestone 3) |
-| **Omar Ahmed** | Data Engineer | Data collection, cleaning & preprocessing (Milestone 1) |
-| **Toqa Hamed** | Data Analyst | Exploratory data analysis & visualization (Milestone 2) |
-| **Mostafa Mohamed** | Backend / MLOps Engineer | API, deployment & monitoring (Milestone 4) |
-| **Nermine Samir** | QA & Presentation Lead | Testing, validation & final presentation (Milestone 5) |
+| **Muhammed Salah** | Team Leader | Project management, EDA & final documentation |
+| **George Emil** | ML Engineer | Model development & optimization |
+| **Omar Ahmed** | Data Engineer | Data collection, cleaning & preprocessing |
+| **Toqa Hamed** | Data Analyst | Data Analysis & visualization |
+| **Mostafa Mohamed** | Backend / MLOps Engineer | API, deployment & monitoring |
+| **Nermine Samir** | QA & Presentation Lead | Testing, validation & final presentation |
 
 ---
 
