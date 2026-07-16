@@ -15,7 +15,6 @@ A data science and machine learning project focused on building a healthcare pre
 - [🚀 Run the App](#-run-the-app)
 - [🗺️ Roadmap](#️-roadmap)
 - [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
 
 ---
 
@@ -157,7 +156,7 @@ python -m src.train --mlflow
 - [x] Exploratory data analysis
 - [x] Model development and evaluation
 - [x] Streamlit demo app and FastAPI service
-- [ ] Final report and results
+- [x] Final report and results
 - [ ] Live cloud deployment
 
 ---
@@ -165,9 +164,3 @@ python -m src.train --mlflow
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to fork this repository and submit a pull request.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
