@@ -1,0 +1,43 @@
+Real Stroke Model Report
+========================
+
+Source file: D:\Depi final project\dataset\healthcare-dataset-stroke-data.csv
+Target: stroke
+Dropped from features: id
+Missing BMI handling: bmi_missing added after splitting; median imputation fitted inside training/CV pipelines only
+Split: 60% train / 20% validation / 20% untouched test, stratified
+Hyperparameter tuning: GridSearchCV per model on the training split, scoring=ROC-AUC
+Model selection: best validation ROC-AUC after tuning
+Threshold selection: best validation positive-class F1
+
+Split summary
+     split  rows  stroke_0  stroke_1  stroke_1_percent  bmi_missing
+     train  3066      2917       149          4.859752          139
+validation  1022       972        50          4.892368           31
+      test  1022       972        50          4.892368           31
+
+Selected model: Support Vector Machine
+Selected threshold: 0.183360
+Selected hyperparameters
+- model__C: 0.5
+- model__gamma: 0.01
+
+Best model audit
+   dataset  threshold  accuracy  positive_f1  positive_precision  positive_recall  macro_f1  weighted_f1  roc_auc  average_precision  tn  fp  fn  tp
+validation     0.1834    0.9227       0.2883              0.2623             0.32    0.6237       0.9263   0.8467             0.2075 927  45  34  16
+      test     0.1834    0.9168       0.3200              0.2667             0.40    0.6379       0.9246   0.8406             0.2855 917  55  30  20
+
+Test classification report
+              precision    recall  f1-score   support
+
+           0     0.9683    0.9434    0.9557       972
+           1     0.2667    0.4000    0.3200        50
+
+    accuracy                         0.9168      1022
+   macro avg     0.6175    0.6717    0.6379      1022
+weighted avg     0.9340    0.9168    0.9246      1022
+
+
+Confusion matrix labels [[TN, FP], [FN, TP]]
+[[917  55]
+ [ 30  20]]
